@@ -9,7 +9,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 public abstract class Helpers
@@ -19,14 +18,12 @@ public abstract class Helpers
 
     private static long mTimeoutInSeconds = 30;
     private static long mCurrentTimeout = mTimeoutInSeconds;
-    private static Random mRandom;
 
     /**
      * Initialize the webdriver. Must be called before using any helper methods. *
      */
     public static void init(AndroidDriver webDriver)
     {
-        mRandom = new Random();
         mDriver = webDriver;
 
         // must wait at least 60 seconds for running on Sauce.
