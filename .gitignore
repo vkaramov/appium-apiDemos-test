@@ -1,0 +1,4 @@
+.idea/
+.gradle
+apiDemos/target/test-classes/
+*.iml
