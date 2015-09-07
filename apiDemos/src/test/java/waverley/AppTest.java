@@ -89,7 +89,7 @@ public class AppTest extends AppiumTest
         final String userName = "Viacheslav Karamov";
         final String password = "qwerty";
         // Find "Name" textField using more universal, but much slower strategy
-        MobileElement nameField = Helpers.findByResourceId("io.appium.android.apis:id/username_edit");
+        MobileElement nameField = Helpers.element(Helpers.locatorByValue("io.appium.android.apis:id/username_edit"));
         nameField.sendKeys(userName);
 
         // Find password field using Android UIAutomator strategy
